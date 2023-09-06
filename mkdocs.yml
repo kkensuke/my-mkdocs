@@ -41,7 +41,7 @@ theme:
   favicon: assets/favicon.png
   font:
     text: Roboto
-    code: Monokai
+    code: Roboto Mono
   icon:
     logo: logo
   features:
@@ -109,7 +109,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/kkensuke
     - icon: fontawesome/brands/twitter
-      # link:
+      link: https://twitter.com
   # alternate:
   #   - name: English
   #     link: /en/
