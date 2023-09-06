@@ -1,5 +1,5 @@
 # Tools
-> last modified: {sub-ref}`today`
+
 
 - [Web Apps](webapp/webapp.md)
 - [Mac Apps](macapp/macapp.md)

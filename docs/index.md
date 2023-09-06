@@ -1,5 +1,5 @@
 # Welcome to my Jupyter Book
-> last modified: {sub-ref}`today`
+
 
 - [Programming basics](pages/basic/basics.md)
 - [Python](pages/python/index.md)

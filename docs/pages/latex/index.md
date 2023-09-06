@@ -1,5 +1,5 @@
 # $\LaTeX$
-> last modified: {sub-ref}`today`
+
 
 !!! important "$\LaTeX$"
 

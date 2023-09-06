@@ -1,5 +1,5 @@
 # Programming basics
-> last modified: {sub-ref}`today`
+
 
 - [Command Line](./linux.md)
 - [$PATH](./path.md)
