@@ -1,4 +1,4 @@
-# Programming basics
+# Basics
 
 
 - [Command Line](./linux.md)

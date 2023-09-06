@@ -20,7 +20,7 @@
 
 # Project information
 site_name: My MkDocs
-site_url: https://github.com/kkensuke/myjb-en
+site_url: https://kkensuke.github.io/my-mkdocs/
 site_author: K. Kensuke
 site_description: >-
   Write your documentation in Markdown and create a professional static site in
@@ -178,7 +178,6 @@ extra_css:
 # Page tree
 nav:
   - Programming:
-    # - index.md
     - Basics:
       - pages/basics/index.md
       - Linux:    pages/basics/linux.md
