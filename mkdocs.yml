@@ -178,6 +178,7 @@ extra_css:
 # Page tree
 nav:
   - Programming:
+    - index.md
     - Basics:
       - pages/basics/index.md
       - Linux:    pages/basics/linux.md
