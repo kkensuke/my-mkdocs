@@ -8,7 +8,7 @@ To use 	`physics` package in MkDocs, add the following in `docs/javascripts/math
 You can see the physics package examples [here](../latex/basics.md#physics-package).
 
 !!! example
-	```javascript
+	```javascript hl_lines="2 16"
 	window.MathJax = {
 	  loader: { load: ['[tex]/physics'] },
 	  svg: {
