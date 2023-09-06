@@ -1,0 +1,221 @@
+# Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+# Project information
+site_name: My MkDocs
+site_url: https://github.com/kkensuke/myjb-en
+site_author: K. Kensuke
+site_description: >-
+  Write your documentation in Markdown and create a professional static site in
+  minutes - searchable, customizable, in 60+ languages, for all devices
+
+# Repository
+repo_name: kkensuke/myjb-en
+repo_url: https://github.com/kkensuke/myjb-en
+
+# Copyright
+copyright: Copyright &copy; 2023 Kensuke Kamisoyama
+
+# Configuration
+theme:
+  language: en
+  name: material
+#   custom_dir: material/.overrides
+  favicon: assets/favicon.png
+  font:
+    text: Roboto
+    code: Monokai
+  icon:
+    logo: logo
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# Plugins
+plugins:
+  - blog
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+#   - minify:
+#       minify_html: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+
+# Hooks
+# hooks:
+#   - material/.overrides/hooks/translations.py
+
+# Customization
+extra:
+  annotate:
+    json: [.s2]
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kkensuke
+    - icon: fontawesome/brands/twitter
+      # link: 
+  # alternate:
+  #   - name: English
+  #     link: /en/
+  #     lang: en
+  #   - name: Japanese
+  #     link: /ja/
+  #     lang: ja
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+# Page tree
+nav:
+  - Programming:
+    - index.md
+    - Basics:
+      - pages/basics/index.md
+      - Linux:    pages/basics/linux.md
+      - PATH:     pages/basics/path.md
+      - Alias:    pages/basics/alias.md
+      - Zsh:      pages/basics/zsh.md
+      - Markdown: pages/basics/markdown.md
+      - GitHub:   pages/basics/github/github.md
+      - Commit Message with Emoji:   pages/basics/github/commitMessage.md
+      - Package:  pages/basics/packageManager.md
+    - Python:
+      - pages/python/index.md
+      - Basics: pages/python/basics.md
+      - Numpy:  pages/python/numpy.md
+      - Matplotlib: pages/python/matplotlib.md
+      - SciPy:  pages/python/scipy.md
+      - SymPy:  pages/python/sympy.md
+    - Coding rules:
+      - pages/coding-rules/index.md
+      - Naming: pages/coding-rules/naming.md
+    - Material for MkDocs:
+      - pages/mkdocs/index.md
+      - Math Adomonitions: pages/mkdocs/proof.md
+  - Latex:
+    - pages/latex/index.md
+    - Settings:   pages/latex/settings.md
+    - Basics:     pages/latex/basics.md
+    - article:    pages/latex/article.md
+    - beamer:     pages/latex/beamer.md
+    - revtex4-2:  pages/latex/revtex4-2.md
+    - newcommand: pages/latex/newcommands.md
+  - Tools:
+    - pages/tools/index.md
+    - Web apps: pages/tools/webapp/webapp.md
+    - Mac apps: pages/tools/macapp/macapp.md
+    - Firefox extensions: pages/tools/firefox/firefox.md
+    - VSCode extensions:  pages/tools/vscode/vscode.md
+  - Blog:
+    - blog/index.md
+    - article: blog/article-1.md
