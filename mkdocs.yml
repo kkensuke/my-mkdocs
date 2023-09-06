@@ -216,6 +216,7 @@ nav:
       - newcommand: pages/latex/newcommands.md
     - Material for MkDocs:
       - pages/mkdocs/index.md
+      - Admonitions: pages/mkdocs/admonitions.md
       - Math Adomonitions: pages/mkdocs/proof.md
       - MathJax: pages/mkdocs/mathjax.md
   - Blog:

@@ -52,11 +52,6 @@
     euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
     purus auctor massa, nec semper lorem quam in massa.
 
-!!! example
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-    euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-    purus auctor massa, nec semper lorem quam in massa.
-
 !!! remark
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
     euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
@@ -221,23 +216,6 @@ Add the following CSS to your `docs/stylesheets/extra.css`.
 }
 .md-typeset .proof > .admonition-title::before,
 .md-typeset .proof > summary::before {
-  background-color:  rgba(0, 0, 0, 0);
-  -webkit-mask-image: none;
-          mask-image: none;
-}
-
-.md-typeset .admonition.example,
-.md-typeset details.example {
-  border-color: var(--grey-border-color);
-  background-color: var(--grey-title-color);
-}
-.md-typeset .example > .admonition-title,
-.md-typeset .example > summary {
-  padding-left: .6rem;
-  background-color: var(--grey-title-color);
-}
-.md-typeset .example > .admonition-title::before,
-.md-typeset .example > summary::before {
   background-color:  rgba(0, 0, 0, 0);
   -webkit-mask-image: none;
           mask-image: none;
