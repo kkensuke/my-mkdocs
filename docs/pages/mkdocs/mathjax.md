@@ -5,6 +5,8 @@ To use 	`physics` package in MkDocs, add the following in `docs/javascripts/math
 - `loader: { load: ['[tex]/physics'] },`
 - `packages: { '[+]': ['physics'] },`
 
+You can see the physics package examples [here](../latex/basics.md#physics-package).
+
 !!! example
 	```javascript
 	window.MathJax = {
@@ -29,7 +31,7 @@ To use 	`physics` package in MkDocs, add the following in `docs/javascripts/math
 	    }
 	  }
 	};
-	
+
 	document$.subscribe(() => {
 	  MathJax.typesetPromise()
 	})
