@@ -56,8 +56,8 @@ Contents in`.zshrc` are also easy to get messy, so divide them into files and im
 ...
 ```
 
-!!! hint
-    👉 Other dotfiles in the home directory can also be managed in the same way.
+!!! tip
+    Other dotfiles in the home directory can also be managed in the same way.
 
 
 - [My zsh](https://github.com/kkensuke/dotfiles/zsh)

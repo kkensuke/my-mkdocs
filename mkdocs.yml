@@ -178,7 +178,7 @@ extra_css:
 # Page tree
 nav:
   - Programming:
-    - index.md
+    # - index.md
     - Basics:
       - pages/basics/index.md
       - Linux:    pages/basics/linux.md
@@ -199,24 +199,25 @@ nav:
     - Coding rules:
       - pages/coding-rules/index.md
       - Naming: pages/coding-rules/naming.md
+  - Others:
+    - Tools:
+      - pages/tools/index.md
+      - Web apps: pages/tools/webapp/webapp.md
+      - Mac apps: pages/tools/macapp/macapp.md
+      - Firefox extensions: pages/tools/firefox/firefox.md
+      - VSCode extensions:  pages/tools/vscode/vscode.md
+    - Latex:
+      - pages/latex/index.md
+      - Settings:   pages/latex/settings.md
+      - Basics:     pages/latex/basics.md
+      - article:    pages/latex/article.md
+      - beamer:     pages/latex/beamer.md
+      - revtex4-2:  pages/latex/revtex4-2.md
+      - newcommand: pages/latex/newcommands.md
     - Material for MkDocs:
       - pages/mkdocs/index.md
       - Math Adomonitions: pages/mkdocs/proof.md
       - MathJax: pages/mkdocs/mathjax.md
-  - Latex:
-    - pages/latex/index.md
-    - Settings:   pages/latex/settings.md
-    - Basics:     pages/latex/basics.md
-    - article:    pages/latex/article.md
-    - beamer:     pages/latex/beamer.md
-    - revtex4-2:  pages/latex/revtex4-2.md
-    - newcommand: pages/latex/newcommands.md
-  - Tools:
-    - pages/tools/index.md
-    - Web apps: pages/tools/webapp/webapp.md
-    - Mac apps: pages/tools/macapp/macapp.md
-    - Firefox extensions: pages/tools/firefox/firefox.md
-    - VSCode extensions:  pages/tools/vscode/vscode.md
   - Blog:
     - blog/index.md
     - article: blog/article-1.md
