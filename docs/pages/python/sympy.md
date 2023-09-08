@@ -18,55 +18,55 @@ kernelspec:
 
 In this page, you see examples of sympy usage.
 
-```py
+```python
 from sympy import *
 ```
 
 ## Declare symbols
 
-```py
+```python
 x = Symbol("x")
 y = Symbol("y")
 ```
 
-```py
+```python
 (x + y) ** 2
 ```
 
 ## Expansion
 
-```py
+```python
 f = expand((x + y) ** 2)
 display(f)
 ```
 
 ## Substitution
 
-```py
+```python
 f.subs({x: 1, y: 2})
 ```
 
 ## Factorization
 
-```py
+```python
 factor(x**2 - 4 * x + 3)
 ```
 
 ## Solve equations
 
-```py
+```python
 solve(x**2 - x - 1)
 ```
 
 ## Partial fraction decomposition
 
-```py
+```python
 apart(1 / (x**5 - 1))
 ```
 
 ## Integrals and derivatives
 
-```py
+```python
 a = Symbol("a")  # Without real=True, a is treated as a complex number.
 b = Symbol("b")
 
@@ -74,19 +74,19 @@ u = exp(a * x) * sin(b * x)
 display(u)
 ```
 
-```py
+```python
 int_u = integrate(u, x)
 display(int_u)
 ```
 
-```py
+```python
 R = diff(u, x, 2) + u + x
 display(R)
 ```
 
 ## Summation
 
-```py
+```python
 k, N = symbols("k, N", integer=True)
 factor(summation(k, (k, 1, N)))
 ```
@@ -95,13 +95,13 @@ factor(summation(k, (k, 1, N)))
 
 $$ \lim_{x \to 0} \frac{\sin x}{x} = 1 $$
 
-```py
+```python
 limit(sin(x) / x, x, 0)
 ```
 
 ## Other Examples
 
-```py
+```python
 s = Symbol("s")
 t = Symbol("t")
 
@@ -110,7 +110,7 @@ l = (s**2 * x**3) + (t * x**2) + (3 * x) + 1
 display(l)
 ```
 
-```py
+```python
 int_l = integrate(l, (x, 0, 1))
 display(int_l)
 ```

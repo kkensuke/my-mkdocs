@@ -32,7 +32,7 @@ To begin with, let us print the string "Hello World" using `print()` function.
 In jupyter lab(notebook), a code block is called a `cell`. A cell can contain multiple lines of code.
 To execute the code, click on the cell(colored in blue(jupyter notebook:green)) and press `Shift+Enter`.
 
-```py
+```python
 print("Hello, world!")
 ```
 
@@ -43,7 +43,7 @@ When programming, we often put some comments to explain the code. In python, we 
 
 If you want to comment out multiple lines, you can use `""" comment """` to write comments (actually, this is called docstrings).
 
-```py
+```python
 # This is a comment. No output.
 
 """
@@ -57,7 +57,7 @@ If you want to comment out multiple lines, you can use `""" comment """` to writ
 
 ### Arithmetic operations
 
-```py
+```python
 print(1+1)
 ```
 
@@ -66,36 +66,36 @@ The "Hello World" string has the data type `str`. The operations will be perform
 
 For example, `+` operator is used to add two numbers, and `+` operator is used to concatenate two strings.
 
-```py
+```python
 # you cannot use strings to do math.
 print(3+4)
 print('3+4')
 print('3'+'4')
 ```
 
-```py
+```python
 # This will be an error. You can't add a number and a string. 
 # You need to convert the string to a number or vice versa.
 print(3+'4')
 ```
 
-```py
+```python
 a = 3 # This is a variable. 
 b = '4'
 print(a+b) # This will be the same as the above cell.
 ```
 
-```py
+```python
 # print out several inputs with `,`
 print(a, b)
 ```
 
-```py
+```python
 print(a + int(b)) # This will convert the string to a number.
 print(str(a) + b) # This will convert the number to a string.
 ```
 
-```py
+```python
 # Basic arithmetic operations
 print('addition 1+1 = ', 1+1)
 print('subtraction 5-1 = ', 5-1)
@@ -106,7 +106,7 @@ print('floor division 5//2 = ', 5//2)
 print('exponentiation 5**2 = ', 5**2)
 ```
 
-```py
+```python
 # Instead of using a new line, you can use a semicolon.
 print('adsf'); print('asdf')
 ```
@@ -128,7 +128,7 @@ Others; `x`; cut a cell. `c` ; copy a cell. `v`; paste a cell (Shift + `c` to co
 
 List, tuple, set, dictionary are used to store data in different ways.
 
-```py
+```python
 l = [3,4,5]
 index = 0 # index starts with 0
 print(l[index])
@@ -137,12 +137,12 @@ l[1] = 7 # You can change the value of an element in a list.
 print(l)
 ```
 
-```py
+```python
 # You can use different types of data in a list.
 l = [3,4,5,'a','b','c', True, False, [1,2,3]]
 ```
 
-```py
+```python
 t = (3,4,5)
 
 t[2] = 7
@@ -150,12 +150,12 @@ t[2] = 7
 # However, a tuple uses less memory than a list.
 ```
 
-```py
+```python
 s = {3,4,5,5}
 print(s)
 ```
 
-```py
+```python
 d = {'a':3,'b':4,'c':5}
 print(d['a'])
 
@@ -171,7 +171,7 @@ print(d.values()) # This will return a list of all the values in the dictionary.
 ---
 ## Open a file
 
-```py
+```python
 path = './sample.txt'
 with open(path) as f:
     l = f.readlines()
@@ -185,20 +185,20 @@ with open(path) as f:
 
 `for loop` is used to iterate over a collection of items.
 
-```py
+```python
 for i in range(5):
     print(i)
 # Index starts at 0.
 ```
 
-```py
+```python
 for i in range(5,10):
     print(i)
 # Index starts at 5.
 # cf. range(5,13,2)
 ```
 
-```py
+```python
 items = ['a','b','c','d','e']
 for i in items:
     print(i)
@@ -209,12 +209,12 @@ for i in range(len(items)):
     print(items[i])
 ```
 
-```py
+```python
 for i, item in enumerate(items):
     print(i, item)
 ```
 
-```py
+```python
 for _ in range(5):
     print('Hello')
 ```
@@ -222,26 +222,26 @@ for _ in range(5):
 ---
 ## Comprehension
 
-```py
+```python
 [i for i in range(5)]
 ```
 
-```py
+```python
 data = [3,14,23,28,35,46,55,65,76,87,98,109,120,131,142]
 [x*10 for x in data]
 ```
 
-```py
+```python
 [x for x in data if x%2==0]
 ```
 
-```py
+```python
 [x if x>50 else x*10 for x in data]
 ```
 
 You can use list comprehension like below but it is not recommended because it is hard to read.
 
-```py
+```python
 import numpy as np # This is a module. NumPy is a package that contains many useful functions for working with arrays.
 a = np.arange(1,51)
 fizz_buzz = ['fizzbuzz' if x%3==0 and x%5==0 else 'fizz' if x%3==0 else 'buzz' if x%5==0 else x for x in a]
@@ -254,16 +254,16 @@ print(fizz_buzz)
 `function` is a block of code which take inputs and returns outputs. It only runs when it is called. 
 Actually, most code we write consists of functions.
 
-```py
+```python
 def print_hello():
     print('Hello, world!')
 ```
 
-```py
+```python
 print_hello()
 ```
 
-```py
+```python
 def myfunc(arg1, arg2):
     for i in range(arg1):
         print(arg2)
@@ -272,7 +272,7 @@ myfunc(3, 'Hello')
 # = myfunc(arg1=3, arg2='Hello')
 ```
 
-```py
+```python
 import numpy as np # NumPy is a package that contains many useful functions for working with arrays.
 import matplotlib.pyplot as plt # Matplotlib is a package that contains many useful functions for plotting.
 
@@ -283,7 +283,7 @@ print(x[:5])
 print(y[:5])
 ```
 
-```py
+```python
 plt.plot(x,y)
 plt.title('sin')
 plt.show()
@@ -294,7 +294,7 @@ plt.show()
 
 $$ f(x) = x^2 $$
 
-```py
+```python
 f = lambda x: x**2
 
 print(f(3))

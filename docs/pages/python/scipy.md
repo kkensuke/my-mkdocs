@@ -18,7 +18,7 @@ kernelspec:
 
 In this page, you see examples of scipy functions (differentiation, integration, optimization) to solve problems.
 
-```py
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import integrate, diff, optimize
@@ -45,7 +45,7 @@ Solve the Lotka-Volterra equations. The Lotka-Volterra equations, also known as 
 
 $$ \frac{dx}{dt} = ax - bxy ,\quad \frac{dy}{dt} = -cx + dxy  $$
 
-```py
+```python
 from scipy.integrate import solve_ivp
 
 
@@ -82,7 +82,7 @@ Return `y` and `abserr`.
 
 Let's compute the integral: $ \int_0^4 x^2 dx$
 
-```py
+```python
 x2 = lambda x: x**2
 ans = integrate.quad(x2, 0, 4)  # numerical result
 print("x, y = ", ans)
@@ -106,7 +106,7 @@ find a root of a scalar function
 
 $$f(x) = x^2 - x -1 $$
 
-```py
+```python
 from scipy import optimize
 
 
@@ -131,7 +131,7 @@ Find a root of a vector function.
 >                    callback=None, options=None)
 >```
 
-```py
+```python
 def fun(x):
     return [x[0] + 0.5 * (x[0] - x[1]) ** 3 - 1.0, 0.5 * (x[1] - x[0]) ** 3 + x[1]]
 
@@ -164,7 +164,7 @@ find the minimum point of
 
 $$ f(x,y) = (1-x)^2 + 5(y-x^2)^2 $$
 
-```py
+```python
 from scipy.optimize import minimize
 
 f = lambda x: (1 - x[0]) ** 2 + 5 * (x[1] - x[0] ** 2) ** 2
@@ -186,7 +186,7 @@ Least-squares
 
 Here, we solve fitting problem.
 
-```py
+```python
 # Solve a nonlinear least-squares problem with bounds on the variables.
 import os
 import scipy.optimize as opt

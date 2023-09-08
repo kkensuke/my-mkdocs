@@ -16,7 +16,7 @@ kernelspec:
 
 Numpy is a Python library for scientific computing. It provides high-performance multidimensional arrays and matrices, and efficient tools for working with these objects.
 
-```py
+```python
 import numpy as np
 ```
 
@@ -26,34 +26,34 @@ import numpy as np
 
 A basic way to create an array is to use the function `np.array()`. It takes a list as an argument and returns a numpy array.
 
-```py
+```python
 a = np.array([1, 2, 3])
 print(a)
 ```
 
 In numpy, there are many methods to create arrays. For example, `np.arange()` creates an array of integers, `np.zeros()` creates an array of zeros, and `np.ones()` creates an array of ones.
 
-```py
+```python
 np.arange(10)
 ```
 
-```py
+```python
 np.arange(1, 10, 2)
 ```
 
-```py
+```python
 np.zeros(10)
 ```
 
-```py
+```python
 np.zeros((3, 5))
 ```
 
-```py
+```python
 np.ones(10)
 ```
 
-```py
+```python
 np.ones((3, 5))
 ```
 
@@ -67,7 +67,7 @@ np.ones((3, 5))
 
 `np.random.choice(a, size, replace=True, p=None)` makes an array of random numbers from the list a.
 
-```py
+```python
 np.random.seed(0)
 
 print("np.random.rand(5) = ", np.random.rand(5), sep="\n", end="\n\n")
@@ -87,70 +87,70 @@ print("np.random.choice(['a', 'b', 'c'], 10) = ", np.random.choice(["a", "b", "c
 
 `np.linspace(start, stop, num, endpoint=True)` creates an array of evenly spaced numbers over a specified interval. This can be useful for plotting functions.
 
-```py
+```python
 np.linspace(0, 1, 6)
 ```
 
 `np.eye()` creates an matrix with ones on the diagonal and zeros elsewhere. You can also make non-square identity matrices by specifying the number of rows and columns.
 
-```py
+```python
 np.eye(3, 5)
 ```
 
-```py
+```python
 np.eye(5)  # This is the same as np.identity(5)
 ```
 
-```py
+```python
 np.identity(5)
 ```
 
 `np.emtpy()` creates an array of uninitialized (arbitrary) data of the given shape and dtype. It is used when you want to create an array and then fill it with data later. It is faster than creating an array of zeros or ones using `np.zeros()` or `np.ones()`.
 
-```py
+```python
 np.empty(10)
 ```
 
 `np.zeros_like(()`, `np.ones_like()`, `np.empty_like()` create arrays of zeros, ones, or uninitialized data with the same shape and dtype as the given array.
 
-```py
+```python
 a = np.array([[1, 2, 3], [4, 5, 6]])
 
 np.zeros_like(a)
 ```
 
-```py
+```python
 np.full((3, 5), 3)
 ```
 
-```py
+```python
 np.fromfunction(lambda i, j: i + j, (3, 5))
 ```
 
 ## Manipulating arrays
 
-```py
+```python
 # Append 4 to a
 a = np.array([1, 2, 3])
 b = np.append(a, 4)
 print(b)
 ```
 
-```py
+```python
 # Delete a[1]
 a = np.array([1, 2, 3])
 b = np.delete(a, 1)
 print(b)
 ```
 
-```py
+```python
 # Sort a
 a = np.array([3, 2, 1])
 b = np.sort(a)
 print(b)
 ```
 
-```py
+```python
 # Concatenate two arrays
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
@@ -158,7 +158,7 @@ c = np.concatenate((a, b))
 print(c)
 ```
 
-```py
+```python
 # Reshape an array
 a = np.array([1, 2, 3, 4, 5, 6])
 print("a.shape ", a.shape)
@@ -167,14 +167,14 @@ print("b = ", b)
 print("b.shape ", b.shape)
 ```
 
-```py
+```python
 # Conditional selection
 a = np.array([1, 2, 3, 4, 5, 6])
 print(a > 3)
 print(a[a > 3])
 ```
 
-```py
+```python
 # Slice an array
 a = np.array([1, 2, 3, 4, 5, 6])
 # print from a[1] to a[3], not including a[4](=5)
@@ -183,7 +183,7 @@ print(a[1:4])
 
 ## Arithmetic operations on arrays
 
-```py
+```python
 a = np.array([1, 2, 3, 4])
 b = np.array([5, 6, 7, 8])
 
@@ -200,7 +200,7 @@ print(a * b)
 print(a / b)
 ```
 
-```py
+```python
 a = np.array([1, 2, 3, 4])
 
 # Add a scalar to each element
@@ -234,7 +234,7 @@ print("np.sin(a) = ", np.sin(a))
 print("np.cos(a) = ", np.cos(a))
 ```
 
-```py
+```python
 a = np.array([1, 2, 3, 4, 5])
 
 # Maximum
@@ -262,7 +262,7 @@ print("std = ", a.std())
 print("var = ", a.var())
 ```
 
-```py
+```python
 # Dot product
 a = np.array([1, 2, 3, 4])
 b = np.array([5, 6, 7, 8])
@@ -271,7 +271,7 @@ print(np.dot(a, b))
 
 ## Matrix operations
 
-```py
+```python
 a = np.array([[1, 2, 3], [4, 5, 6]])
 b = np.array([[7, 8], [9, 10], [11, 12]])
 
@@ -283,7 +283,7 @@ print(a.dot(b), end="\n\n")
 print(a @ b, end="\n\n")
 ```
 
-```py
+```python
 a = np.array([[1, 2, 3], [4, 6, 8], [7, 11, 13]])
 
 # Transpose
@@ -301,7 +301,7 @@ print("np.linalg.inv(a) = ", np.linalg.inv(a), sep="\n", end="\n\n")
 
 `np.linalg.???` is a module for linear algebra. `linalg` can also be called from `scipy` as `scipy.linalg.???`.
 
-```py
+```python
 # Eigenvalues and eigenvectors
 eigvals, eigvecs = np.linalg.eig(a)
 print("eigvals = ", eigvals, sep="\n", end="\n\n")
@@ -310,7 +310,7 @@ print("eigvecs = ", eigvecs, sep="\n", end="\n\n")
 print("a = ", eigvecs @ np.diag(eigvals) @ np.linalg.inv(eigvecs), sep="\n", end="\n\n")
 ```
 
-```py
+```python
 # Singular value decomposition
 U, S, V = np.linalg.svd(a)
 print("U = ", U, sep="\n", end="\n\n")

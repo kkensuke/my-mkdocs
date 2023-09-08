@@ -16,14 +16,14 @@ kernelspec:
 
 Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. - [Matplotlib](https://matplotlib.org/)
 
-```py
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 ```
 
 ## 1. Plot a line
 
-```py
+```python
 # make a square function
 def square(x):
     return x**2
@@ -35,13 +35,13 @@ x = np.linspace(-5, 5, 100)
 y = square(x)
 ```
 
-```py
+```python
 # plot the function. ` plt` is an alias for `matplotlib.pyplot`.
 plt.plot(x, y)
 plt.show()
 ```
 
-```py
+```python
 # plot the function. ` plt` is an alias for `matplotlib.pyplot`.
 plt.plot(x, y)
 
@@ -57,7 +57,7 @@ plt.show()
 
 ### Change color, marker style and line style 
 
-```py
+```python
 x = np.linspace(-5, 5, 10)
 y = square(x)
 
@@ -79,12 +79,12 @@ plt.show()
 
 Add cube function plot.
 
-```py
+```python
 def cube(x):
     return x**3
 ```
 
-```py
+```python
 x = np.linspace(-3, 3, 10)
 y = square(x)
 z = cube(x)
@@ -108,7 +108,7 @@ plt.show()
 
 ### `plt.semilogy` plots the y-axis in log scale.
 
-```py
+```python
 x = np.linspace(0.1, 10, 10)
 y = square(x)
 z = cube(x)
@@ -130,7 +130,7 @@ plt.title('Square function and cube function')
 plt.show()
 ```
 
-```py
+```python
 x = np.linspace(-5, 5, 10)
 y = np.exp(x)
 
@@ -152,7 +152,7 @@ plt.show()
 
 ## 2. Scatter plot
 
-```py
+```python
 # Scatter plot
 x = np.linspace(-5, 5, 20)
 y = square(x)
@@ -161,7 +161,7 @@ plt.scatter(x, y)
 plt.show()
 ```
 
-```py
+```python
 np.random.seed(0)
 
 # Scatter plot: gaussian distribution with mean 0 and standard deviation 1
@@ -174,7 +174,7 @@ plt.show()
 
 ## 3. Histogram
 
-```py
+```python
 np.random.seed(0)
 
 # Generate 10000 random numbers from a normal distribution with mean 0 and standard deviation 1.
@@ -188,7 +188,7 @@ plt.show()
 
 ### Add another histogram
 
-```py
+```python
 np.random.seed(0)
 
 # Generate 10000 random numbers from a normal distribution with mean 0 and standard deviation 1.
@@ -214,7 +214,7 @@ plt.title('Histogram')
 plt.show()
 ```
 
-```py
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -248,7 +248,7 @@ plt.show()
 
 ## 5. 2D plots
 
-```py
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -266,7 +266,7 @@ plt.show()
 
 ## 6. 3D line plots
 
-```py
+```python
 def pos(t):
     
     x = np.exp(-t) * np.cos(10 * np.pi * t)
@@ -294,7 +294,7 @@ plt.show()
 
 ## 7. 3D surface plot
 
-```py
+```python
 import matplotlib.pyplot as plt
 from matplotlib import cm
 from matplotlib.ticker import LinearLocator

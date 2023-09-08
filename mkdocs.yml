@@ -58,10 +58,7 @@ theme:
     - navigation.indexes
     - navigation.instant
     - navigation.sections
-    # - navigation.expand
-    # - navigation.prune
     - navigation.tabs
-    # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -86,17 +83,15 @@ theme:
 # Plugins
 plugins:
   - blog
+  # - markdown-exec
+  - mkdocs-jupyter:
+      include_source: True
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
 #   - minify:
 #       minify_html: true
   - git-revision-date-localized:
       enable_creation_date: true
-
-
-# Hooks
-# hooks:
-#   - material/.overrides/hooks/translations.py
 
 # Customization
 extra:
@@ -110,13 +105,6 @@ extra:
       link: https://github.com/kkensuke
     - icon: fontawesome/brands/twitter
       link: https://twitter.com
-  # alternate:
-  #   - name: English
-  #     link: /en/
-  #     lang: en
-  #   - name: Japanese
-  #     link: /ja/
-  #     lang: ja
   consent:
     title: Cookie consent
     description: >-
@@ -190,12 +178,12 @@ nav:
       - Commit Message with Emoji:   pages/basics/github/commitMessage.md
       - Package:  pages/basics/packageManager.md
     - Python:
-      - pages/python/index.md
-      - Basics: pages/python/basics.md
-      - Numpy:  pages/python/numpy.md
-      - Matplotlib: pages/python/matplotlib.md
-      - SciPy:  pages/python/scipy.md
-      - SymPy:  pages/python/sympy.md
+      - pages/python-ipynb/index.md
+      - Basics: pages/python-ipynb/basics.ipynb
+      - Numpy:  pages/python-ipynb/numpy.ipynb
+      - Matplotlib: pages/python-ipynb/matplotlib.ipynb
+      - SciPy:  pages/python-ipynb/scipy.ipynb
+      - SymPy:  pages/python-ipynb/sympy.ipynb
     - Coding rules:
       - pages/coding-rules/index.md
       - Naming: pages/coding-rules/naming.md
