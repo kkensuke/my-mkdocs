@@ -13,7 +13,7 @@
 /* make space around jb-output area */
 .jp-OutputArea {
   margin-top: 0.5rem;
-  padding-left: 0.5rem;
+  padding: 0.5rem;
   /* jp-OutputArea boarder color */
   border: 1px solid var(--jp-border-color0);
   border-left: 3px solid green;
