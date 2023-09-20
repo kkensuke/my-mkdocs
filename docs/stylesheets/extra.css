@@ -6,12 +6,8 @@
   display: none !important;
 }
 
-/* jp-InputArea boarder-radius*/
-.jp-InputArea-editor {
-  border-radius: 6px;
-}
-/* make space around jb-output area */
 .jp-OutputArea {
+  /* make space around jp-output area */
   margin-top: 0.5rem;
   padding: 0.5rem;
   /* jp-OutputArea boarder color */
@@ -19,6 +15,15 @@
   border-left: 3px solid green;
   border-radius: 6px;
   background-color: var(--jp-layout-color0);
+}
+
+/* change inline code color */
+.md-typeset p > code {
+  color: rgb(255, 45, 132);
+}
+.md-typeset code {
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: .3rem;
 }
 
 /* custom admonitions */
