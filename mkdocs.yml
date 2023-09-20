@@ -3,8 +3,7 @@ site_name: My MkDocs
 site_url: https://kkensuke.github.io/my-mkdocs/pages/basics/
 site_author: K. Kensuke
 site_description: >-
-  Write your documentation in Markdown and create a professional static site in
-  minutes - searchable, customizable, in 60+ languages, for all devices
+  My notes and blogs for programming, tools, and so on.
 
 # Repository
 repo_name: kkensuke/myjb-en
@@ -14,12 +13,10 @@ edit_uri: edit/main/docs/
 # Copyright
 copyright: Copyright &copy; 2023 Kensuke Kamisoyama
 
-
 # Configuration
 theme:
   language: en
   name: material
-#   custom_dir: material/.overrides
   favicon: assets/favicon.png
   font:
     text: Roboto
@@ -32,10 +29,8 @@ theme:
     - content.action.view
     - content.code.annotate
     - content.code.copy
-    # - content.code.select
-    # - content.tabs.link
     - content.tooltips
-    # - header.autohide
+    - header.autohide
     - navigation.footer
     - navigation.indexes
     - navigation.instant
@@ -47,7 +42,6 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
   palette:
     - scheme: default
       primary: blue grey
@@ -76,8 +70,6 @@ plugins:
       include_source: True
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-#   - minify:
-#       minify_html: true
   - git-revision-date-localized:
       enable_creation_date: true
 
@@ -143,6 +135,7 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+# Extra
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
