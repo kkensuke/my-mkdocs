@@ -79,7 +79,7 @@ extra:
     json: [.s2]
   analytics:
     provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
+    property: G-H61H1GDYDS
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/kkensuke
