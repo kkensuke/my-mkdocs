@@ -11,7 +11,7 @@ repo_url: https://github.com/kkensuke/my-mkdocs
 edit_uri: edit/main/docs/
 
 # Copyright
-copyright: Copyright &copy; 2023 Kensuke Kamisoyama
+copyright: Copyright &copy; 2023 kkensuke
 
 # Configuration
 theme:
@@ -58,7 +58,7 @@ theme:
 
 # Plugins
 plugins:
-  - blog
+  - blog:
   - rss:
       match_path: blog/posts/.* 
       date_from_meta:
@@ -168,8 +168,8 @@ nav:
     - Coding rules:
       - pages/coding-rules/index.md
       - Naming: pages/coding-rules/naming.md
-  - Others:
-    - Tools:
+  - Tools:
+    - Apps:
       - pages/tools/index.md
       - Web apps: pages/tools/webapp/webapp.md
       - Mac apps: pages/tools/macapp/macapp.md
@@ -188,5 +188,7 @@ nav:
       - Admonitions: pages/mkdocs/admonitions.md
       - Math Adomonitions: pages/mkdocs/proof.md
       - MathJax: pages/mkdocs/mathjax.md
+  - Books:
+    - pages/book/asdf.md
   - Blog:
     - blog/index.md
