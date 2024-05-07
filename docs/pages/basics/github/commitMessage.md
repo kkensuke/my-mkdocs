@@ -1,3 +1,12 @@
+---
+title: GitHub Commit Messages with Emoji
+summary:
+description: 
+author: kkensuke
+date: 2022-07-06
+comments: true
+---
+
 # Commit Masssages with Emoji
 
 

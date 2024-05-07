@@ -4,6 +4,7 @@ summary:
 description: Usage of GitHub
 author: kkensuke
 date: 2022-07-06
+comments: true
 ---
 # GitHub
 

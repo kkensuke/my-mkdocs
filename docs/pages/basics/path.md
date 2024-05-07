@@ -1,3 +1,13 @@
+---
+title:
+summary:
+description: 
+author: kkensuke
+date: 2022-07-06
+comments: true
+---
+
+
 # $PATH
 
 
