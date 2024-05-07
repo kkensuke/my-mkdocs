@@ -17,6 +17,7 @@ copyright: Copyright &copy; 2023 kkensuke
 theme:
   language: en
   name: material
+  custom_dir: overrides
   favicon: assets/favicon.png
   font:
     text: Roboto
